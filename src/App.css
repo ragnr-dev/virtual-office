@@ -1,0 +1,47 @@
+.App {
+    text-align: center;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.roomContainer {
+    flex-grow: 1;
+    display: flex;
+    margin: 0.5rem;
+}
+
+.roomCall {
+    margin: 0.5rem;
+    width: calc(45vw - 1rem);
+    min-width: 40rem;
+}
+
+.notePadContainer {
+    margin: 0.5rem;
+    flex-grow: 1;
+}
+
+.collaborativeTextArea {
+    flex-grow: 1;
+    border: none;
+    resize: none;
+}
+
+@media (max-width: 1250px) {
+    .roomContainer {
+        flex-direction: column;
+    }
+
+    .roomCall {
+        width: calc(100vw - 2rem);
+    }
+}
